@@ -1,0 +1,58 @@
+h1{
+    height: 50px;
+    width: 300px;
+    padding: 15px 10px 5px 10px;
+    margin: 20px auto;
+    border-style: solid;
+    text-align: center;
+}
+
+h1:nth-of-type(1){
+    background-color: #a2d2ff;
+}
+
+ h1:nth-of-type(2){
+    background-color: #bde0fe;
+}
+
+h1:nth-of-type(3){
+    background-color: #ffafcc;
+}
+
+h1:nth-of-type(4){
+    background-color: #ffc8dd;
+}
+
+section:first-of-type h1:nth-of-type(1){
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+
+section:first-of-type h1:nth-of-type(2){  
+    transform: scale(0.7);                      /* scale resizes an element on the 2D plane */
+
+}
+
+section:first-of-type h1:nth-of-type(3){
+    transform: translateX(20%);                 /* moves element in x-axis(horizentally) */
+}
+
+section:first-of-type h1:nth-of-type(4){
+    transform: skew(25deg);                     /* moves the element on its on axis */
+}
+
+section:nth-of-type(2) h1:nth-of-type(1){
+    transform: rotate(20deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2){
+    transform: translateX(-90%) rotate(25deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(3){
+    transform: translateX(90%) rotate(180deg);
+}
+
+section:nth-of-type(2){                         /* changes the element in section collectively */
+    transform: translateX(30%) scale(0.7);
+}

@@ -1,0 +1,66 @@
+h2{
+    color:rebeccapurple;
+    background-color: palegreen;
+    text-align: center;
+    text-decoration: plum wavy;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    color:  grey;
+    text-align: center;
+    }
+
+table{
+    color: royalblue;
+}
+
+a{
+    text-decoration: none; 
+}
+
+#okay{                                              /* this is a id selector, okay is an ID used in solong page for button*/
+    background-color: cornflowerblue;
+    color: greenyellow;
+}
+
+.age{                                               /* this ia a class selector used cumillatively to give features to elements */
+    color: rebeccapurple;
+}
+
+.race{
+    color: red;
+}
+
+.poem p{                                            /* this ia a nested selector, the p tag inside the section tag with a class 'poem'. We can do nested selector with id as well ! */ 
+    color: blueviolet;
+}
+
+input[type="text"]{                                 /* its an attribute selector, see practice.html change the color of input to blue*/
+    color: blue;
+}
+
+.run button:hover{                                  /* these are called pseudo class */
+    color: cornflowerblue;
+    background-color: black;
+}
+
+.run button:active{                                 /* it will show that the button is in active state, and it will turn into color blue (pseudo class) */
+    background-color:blue ;
+}
+
+.poem p:nth-of-type(2n){                            /* change the color of nth section or paragraph */ 
+    color: red;
+    background-color: black;
+}
+
+div::selection{                                     /* highlight the selected line into red (pseudo element) */
+    background-color: red;
+}

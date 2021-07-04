@@ -1,0 +1,71 @@
+ul, li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+ul{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    border:2px solid rebeccapurple ;
+    max-width: 40%;
+    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+    padding: 15px 15px;
+    margin: 15px 20px;
+    color: lawngreen;
+    font-size: 6em;
+}
+
+@media (min-width: 300px){
+    h1{
+        color: lightseagreen;
+    }
+}
+
+@media (min-width: 762px) {   /* min width should be 762px then only it will change its color to lightpink */
+    h1{
+        color: lightpink; 
+    }
+}
+
+@media (min-width: 900px) {
+    h1{
+        color: blueviolet;
+    }
+}
+
+
+
+@media (max-width: 750px){
+    h1{
+        font-size: 4em;  /* font size will be 4em till 750px */
+    }
+}
+
+@media (max-width: 550px){
+    h1{
+        font-size: 3em;
+    }
+    nav, nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 410px){
+    h1{
+        font-size: 2em;
+    }
+}

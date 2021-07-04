@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+}
+#container{
+    height: 500px;
+    width: 90%;
+    background-color: rebeccapurple;
+    margin:  auto ;
+    margin-bottom: 2em;
+    border: 3px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;                 /* decides the direction of content */
+    justify-content: space-evenly;          /* add the spce between the content evenly (its on main axis) */
+    flex-wrap: wrap-reverse;                /* wraps the content in the section (to fit) reverse specify the direction of the items*/
+    align-items: center;                    /* centers the item on x & y axis */
+    align-content: center;                  /* doesn't work if the items are not wraped */
+}
+
+
+#container div{
+    width: 200px;
+    height: 200px;
+}
+
+#container1{
+    height: 500px;
+    width: 90%;
+    background-color: rebeccapurple;
+    margin: 0 auto;
+    border: 3px solid rebeccapurple;
+    display: flex;
+    flex-direction: row;                    /* decides the direction of content */
+    justify-content:center;                 /* add the space between the content evenly (its on main axis) */
+    flex-wrap: wrap;                        /* wraps the content in the section (to fit) or changes the direction of an item */
+    align-items: center;                    /* centers the item on x & y axis */
+    text-align: center;
+    align-items: baseline;                  /* it will use text as a baseline of an item */
+    
+}
+
+
+#container1 div{
+    width: 200px;
+    height: 200px;    
+}
+
+#container1 div:nth-of-type(3){
+    align-self: center;                     /* centers the individual item in section */
+}
+
+#container1 div:nth-of-type(1){
+    flex-grow: 1;                           /*This specifies how much of the remaining space in the flex container should be assigned to the specific item*/
+}
+
+#container1 div:nth-of-type(5){
+    flex-grow: 1;
+}

@@ -1,0 +1,100 @@
+/*div{
+    width: 300px;
+    height: 200px;
+    background-color: #ffc6ff;
+}
+*/
+#one{
+    border-color: blue;
+    border-width: 3px;
+    border-style: solid;
+    box-sizing: border-box; /* it shirnks the content within the box */
+}
+
+#two{
+    background-color: #bdb2ff;
+    border: 3px solid rebeccapurple;  /* can specify individually like above or can be mentioned in siggle border tag(recommended) */
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+#three{
+    background-color: #a0c4ff;
+    border: 3px dashed olivedrab;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 5px 10px 5px 10px; /* padding is just adding space between content and border. can be appied individually or in single padding tag(recommented) Top-Right-bottom-left */
+    background-color: olivedrab;
+    color:paleturquoise;
+}
+
+h1{
+    margin: 20px 40px 60px 80px;          /* margin can be define as adding space to the outside of the border i.e. adding space between two diff element */
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 5px solid royalblue;
+}
+
+section{
+
+    text-align: center;
+    background-color: rgb(115, 115, 119);
+    font-family: Dancing Script, cursive;
+}
+
+#poem{
+    height: 600px;
+    background-color: rgb(154, 205, 50);
+    display: inline-block;
+    padding: 50px 50px;
+}
+
+#opacity{   /* decides how opaque background color will be */
+    background-color: rgba(228, 39, 26, 0.5);
+}
+
+h2{
+    margin: 0px auto;
+}
+.circle {
+    background-color: tomato;
+    height: 150px;
+    width: 150px;
+    transition: background-color 2s, border-radius 2s;        /* transistion property */
+    text-align: center;
+}
+
+.circle:hover{                               /* will take affect after above */
+    border-radius: 50%;
+   background-color: violet;
+}
+
+section div{
+    margin: 20px 0;
+    transition: margin-left 2s;             /* transtition property (any property| duration| timinig function| delay) */
+    display: inline-block;
+}
+
+section:hover div{                          /* will take effect after above */
+    margin-left: 200px;
+}
+
+ div:nth-of-type(1){                        /* hover effect */
+    transition-timing-function: ease-in; 
+}
+
+div:nth-of-type(2){                         /* hover effect */
+    transition-timing-function: linear;
+}
+
+div:nth-of-type(3){                         /* hover effect */
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+}
+
+div:nth-of-type(4){                         /* hover effect */
+    transition-timing-function: ease-in-out;
+}

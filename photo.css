@@ -1,0 +1,13 @@
+img{
+    width: 30%;
+    margin: 1.66666%;
+}
+
+nav{
+    border-bottom: 2px solid #cddafd;
+    width: 30%;
+    margin:  0 1.6666%;
+    padding: 1em 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3em;
+}

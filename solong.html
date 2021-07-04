@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1>First Page </h1>
+    <link rel="stylesheet" href="style.css">
+    <hr>
+    <!--For horizontal line-->
+</head>
+
+<body>
+    <nav>
+        <!--for navigation bar-->
+        <ul>
+            <li>Home</li>
+            <li><a href="solong.html">Solong</a></li>
+            <li><a href="Box.html">Box</a></li>
+            <li><a href="practice.html">practice</a></li>
+            <li><a href="transform.html">Transform!</a></li>
+            <li><a href="Button.html">Hover</a></li>
+            <li><a href="photo.html">Gallary</a></li>
+            <li><a href="flex.html">Flexbox</a></li>
+            <li><a href="Nav.html">NavBar</a></li>
+            <li><a href="Panal.html">Panal</a></li>
+        </ul>
+    </nav>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis eligendi reiciendis, ullam soluta
+        sequi explicabo incidunt possimus magni accusamus quae numquam distinctio! Molestias similique architecto
+        doloribus sed repellat libero.
+        Minus dicta, magni maxime, nulla debitis distinctio quisquam doloribus ea cupiditate quo reiciendis, rem
+        dignissimos! Eaque, dolore reprehenderit vero omnis hic nisi ea quidem nihil debitis, perferendis unde officiis
+        ipsa!
+        Blanditiis animi quidem quod neque exercitationem unde eos placeat quae molestiae odio, nemo, recusandae
+        voluptas iste corrupti? Ipsam, unde ut autem itaque esse laborum velit. Repudiandae error cumque reiciendis
+        nobis!
+        Accusamus voluptatibus molestias dignissimos fuga tempora qui iusto in neque. Temporibus voluptate placeat
+        reprehenderit cum repudiandae minus suscipit ullam impedit vitae, neque dolore facilis, deserunt quo quibusdam
+        porro molestias? Corporis?
+        Qui doloremque optio exercitationem et laudantium facere corrupti ex voluptates iure rem earum fuga a nostrum,
+        reprehenderit, nisi culpa maxime libero magni odio vero quasi quibusdam. Iure iste beatae voluptatibus!
+    </div>
+    <a href="About.html">about</a>
+    <!--anchor tag is used for linking the pages-->
+
+    <form action="/form">
+        <!-- action  tag specifies where the form will be submitted-->
+
+        <p>
+            <label for="Name"> Enter a Usersname: </label>
+            <!-- Label tag hold the content and input together or in this case in same line-->
+            <input type="text" placeholder="Name" id="Name" name="U" required>
+            <!-- id should be unique for every input & name tag specifie the name of an input element and used as reference while submmiting anything -->
+            <label for="Pwd"> Enter a Password: </label>
+            <input type="password" placeholder="Password" id="Pwd" name="P" minlength="5" maxlength="15">
+        </p>
+        <button type="submit">Submit</button>
+        <button type="button">button</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Google!!!</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Youtube</button>
+    </form>
+    <form action="/trip">
+        <h2>TRIP</h2>
+        <p>
+            <!-- only used one name as it should only select one value-->
+            <label for="trip">Yes</label>
+            <input type="radio" id="trip" name="trip" value="yes">
+        </p>
+        <p>
+            <label for="trip1">No</label>
+            <input type="radio" id="trip1" name="trip" value="no">
+        </p>
+        <p>
+            <label for="trip2">Mummy ko puchke bataunga</label>
+            <input type="radio" id="trip2" name="trip" value="maybe">
+        </p>
+        <p>
+            <label for="anime">Anime</label>
+            <select name="anime" id="anime">
+                <option value="">---Choose an Anime---</option>
+                <option value="AOT">AOT</option>
+                <option value="Naruto">Naruto</option>
+                <option value="OP">One Punch</option>
+                <option value="YLIN" selected>You Lie in April</option>
+                <option value="DS">Demon Slayer</option>
+            </select>
+        </p>
+        <label for="tick">I Agree</label>
+        <input type="checkbox" id="tick" name="T&C">
+        <button type="submit" id="okay">Okay!</button>
+    </form>
+
+</body>
+
+</html>
